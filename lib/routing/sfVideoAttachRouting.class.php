@@ -39,6 +39,20 @@ class sfVideoAttachRouting
                 array('id' => '\d+', 'sf_method' => 'post'),
                 array('model' => $config['object_model'], 'type' => 'object', 'video_model' => $config['video_model'])
             ));
+
+            // titles
+            $routing->prependRoute($name .'_video_title', new sfDoctrineRoute(sprintf('/%s/:id/title', $name),
+                array('module' => 'sfVideoTitle', 'action' => 'index'),
+                array('id' => '\d+', 'sf_method' => 'get'),
+                array('model' => $config['object_model'], 'type' => 'object', 'config' => $name)
+            ));
+
+            // save titles
+            $routing->prependRoute($name .'_video_title_save', new sfDoctrineRoute(sprintf('/%s/:id/title', $name),
+                array('module' => 'sfVideoTitle', 'action' => 'save'),
+                array('id' => '\d+', 'sf_method' => 'post'),
+                array('model' => $config['object_model'], 'type' => 'object', 'config' => $name)
+            ));
         }
     }
 }

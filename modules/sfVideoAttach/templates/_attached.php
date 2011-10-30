@@ -70,4 +70,8 @@ $(function(){
       )); ?>
     <?php endforeach; ?>
   </ul>
+
+  <?php if ($sf_params->get('module') != 'sfVideoTitle' && in_array('sfVideoTitle', sfConfig::get('sf_enabled_modules'))): ?>
+    <?php echo link_to('Редактировать названия роликов', $type.'_video_title', $object); ?>
+  <?php endif; ?>
 </div>
