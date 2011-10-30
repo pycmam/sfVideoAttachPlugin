@@ -1,0 +1,71 @@
+
+.sf_video_attach_container {
+  overflow: hidden;
+  text-align: left;
+  font-size: 100%;
+  }
+
+.sf_video_attach_container .title {
+  font-size: 14pt;
+  margin: 10px 0 10px;
+  }
+
+.sf_video_attach_container ul,
+.sf_video_attach_container li {
+  list-style: none;
+  margin: 0; padding: 0;
+  }
+
+.sf_video_attach_container form {
+  padding: 10px 10px 0 10px;
+  border: 1px solid #ddd;
+  background: #E7EEF6;
+  width: 410px;
+  }
+
+.sf_video_attach_container .form .form-row {
+  overflow: hidden;
+  margin-bottom: 10px;
+  }
+
+.sf_video_attach_container .form .form-row label {
+  display: block !important;
+  width: 120px;
+  }
+
+.sf_video_attach_container .form .form-row input[type=text] {
+  width: 400px !important;
+  }
+
+.sf_video_attach_container .error_list,
+.sf_video_attach_container .error_list li {
+  background: none !important;
+  color: #ff0000 !important;
+  padding: 0 !important;
+  }
+
+.sf_video_attach_list {
+    margin: 15px 0 0 0;
+    padding: 0;
+    overflow: hidden;
+    }
+
+    .sf_video_attach_list li {
+        float: left;
+        margin: 0 10px 10px 0;
+        padding: 5px;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background: #fff;
+        text-align: center;
+        cursor: move;
+        }
+
+        .sf_video_attach_list li img {
+            margin-bottom: 3px;
+            }
+
+    .sf_video_attach_list a.delete {
+        background: url('/sfDoctrinePlugin/images/delete.png') no-repeat scroll 0 0 transparent !important;
+        padding-left: 20px;
+        }

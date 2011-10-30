@@ -1,0 +1,7 @@
+#all:
+#  sf_video_attach:
+#    routes_register: true
+#    types:
+#      video_town:
+#        object_model: Town
+#        video_model: TownVideo

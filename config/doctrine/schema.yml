@@ -1,0 +1,12 @@
+
+Video:
+  actAs:
+    Timestampable: ~
+    exSortable: ~
+  columns:
+    title:     { type: string(255) }
+    object_id: { type: integer, notnull: true }
+    url:       { type: string(255), notnull: true }
+  options:
+    symfony:
+      filter: false
