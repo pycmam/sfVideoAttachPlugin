@@ -26,6 +26,7 @@ $(function(){
         if (status == 'success') {
           $(list).append(xhr.responseText);
           $('li:last-child', $(list)).fadeIn('slow');
+          $('.error_list', $(form)).remove();
           form.reset();
         } else {
           $(form).html(xhr.responseText);
